@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Đồ Lưu Niệm</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h1>Đồ Lưu Niệm từ Các Địa Điểm Du Lịch Nổi Tiếng</h1>
+
+    <form id="productForm" action="process.php" method="post">
+        <label for="productName">Tên sản phẩm:</label>
+        <input type="text" id="productName" name="productName" required>
+
+        <label for="price">Giá:</label>
+        <input type="number" id="price" name="price" required>
+
+        <label for="location">Địa điểm:</label>
+        <input type="text" id="location" name="location" required>
+
+        <button type="submit">Thêm sản phẩm</button>
+    </form>
+
+    <div id="productList">
+        <!-- Danh sách sản phẩm sẽ được hiển thị ở đây -->
+    </div>
+
+</body>
+</html>
